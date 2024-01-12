@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What layer of the OSI model is responsible for routing?",
+        "answer": "The Network Layer (Layer 3) is responsible for routing.",
+        "image_path": "/static/images/osi_model.png",
+        "reference": "Cisco Networking Essentials, 2nd Edition",
+	"times_asked": 0,
+	"correct_response":0
+    },
+    {
+        "question": "What is the purpose of a VLAN?",
+        "answer": "A VLAN (Virtual Local Area Network) allows network administrators to group hosts under the same switch into separate networks.",
+        "image_path": "",
+        "reference": "CCNA 200-301 Official Cert Guide, Volume 1",
+        "times_asked": 0,
+	"correct_response":0
+    },
+    {
+        "question": "What occurs when a PC with the IP address 10.1.1.27/28 needs to communicate with a PC that has IP address 10.1.1.18? (Choose two.) \n\n a. It sends the frame to its default gateway. \n b. It sends the frame directly to the destination PC. \n c. It uses ARP to get the MAC address of the default gateway. \n d. It uses ARP to get the MAC address of the destination PC",
+        "answer": "A VLAN (Virtual Local Area Network) allows network administrators to group hosts under the same switch into separate networks.",
+        "image_path": "",
+        "reference": "CCNA 200-301 Official Cert Guide, Volume 1",
+        "times_asked": 0,
+	"correct_response":0
+    }
+]

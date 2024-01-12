@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcard App</title>
+	<style>
+	    body {
+		background-color: #333;
+		color: white;
+		font-family: Arial, sans-serif;
+		text-align: center;
+	    }
+	    #flashcard {
+		background-color: #444;
+		margin: 20px auto;
+		padding: 20px;
+		border-radius: 10px;
+		width: auto; /* Adjust width as needed */
+		max-width: 600px; /* Set a maximum width */
+	    }
+	    #question, #answer {
+		white-space: pre-wrap; /* This will respect newlines and spaces */
+	    }
+	    button {
+		margin-top: 10px;
+	    }
+	</style>
+    <script>
+        function flipCard() {
+            var answer = document.getElementById("answer");
+            var question = document.getElementById("question");
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+                question.style.display = "none";
+            } else {
+                answer.style.display = "none";
+                question.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="flashcard">
+        <div id="question" style="display: block;">
+    		{{ card.question }}
+	</div>
+        <div id="answer" style="display: none;">
+            {{ card.answer }}
+        </div>
+        <button onclick="flipCard()">Flip Card</button>
+        {% if card_index > 0 %}
+            <button onclick="window.location.href='/?topic={{ topic }}&card={{ card_index - 1 }}'">Previous Card</button>
+        {% endif %}
+        {% if card_index < total_cards - 1 %}
+            <button onclick="window.location.href='/?topic={{ topic }}&card={{ card_index + 1 }}'">Next Card</button>
+        {% endif %}
+    </div>
+    <div>
+        {% for topic_name in topics %}
+            <button onclick="window.location.href='/?topic={{ topic_name }}'">{{ topic_name.replace('_', ' ').title() }}</button>
+        {% endfor %}
+    </div>
+</body>
+</html>
