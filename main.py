@@ -20,4 +20,5 @@ def index():
     return render_template('index.html', card=flashcards[card_index], topic=topic, card_index=card_index, total_cards=len(flashcards), topics=topics)
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(host='0.0.0.0', port=5000)
+
