@@ -1,18 +1,106 @@
 [
     {
-        "question": "What layer of the OSI model is responsible for routing?",
-        "answer": "The Network Layer (Layer 3) is responsible for routing.",
-        "image_path": "/static/images/osi_model.png",
-        "reference": "Cisco Networking Essentials, 2nd Edition",
-	"times_asked": 0,
-	"correct_response":0
+        "question": "What is the administrative distance of a Connected interface?",
+        "answer": "Administrative Distance 0",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
     },
     {
-        "question": "What is the purpose of a VLAN?",
-        "answer": "A VLAN (Virtual Local Area Network) allows network administrators to group hosts under the same switch into separate networks.",
+        "question": "What is the administrative distance of a Static Route?",
+        "answer": "Administrative Distance 1",
         "image_path": "",
-        "reference": "CCNA 200-301 Official Cert Guide, Volume 1",
+        "reference": "CCNP study guide page 80",
         "times_asked": 0,
-	"correct_response":0
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of an EIGRP summary route?",
+        "answer": "Administrative Distance 5",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of an eBGP (External Border Gateway Protocol)?",
+        "answer": "Administrative Distance 20",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of an EIGRP (internal)?",
+        "answer": "Administrative Distance 90",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of OSPF?",
+        "answer": "Administrative Distance 110",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of IS-IS (Intermediate System to Intermediate System)?",
+        "answer": "Administrative Distance 115",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of RIP ?",
+        "answer": "Administrative Distance 120",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of an ODR (On-Demand Routing)?",
+        "answer": "Administrative Distance 160",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of EIGRP (external)?",
+        "answer": "Administrative Distance 170",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of iBGP (Internal Border Gateway Protocol) 200?",
+        "answer": "Administrative Distance 200",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the administrative distance of Unknown (not believable)?",
+        "answer": "Administrative Distance 255",
+        "image_path": "",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
+    },
+    {
+        "question": "What is the cost of OSPF route 1.1.1.1?",
+        "answer": "65 - [110/65] - 110 is Administrative distance, 65 is the OSPF metric cost",
+        "image_path": "images/routing_table_1.png",
+        "reference": "CCNP study guide page 80",
+        "times_asked": 0,
+        "correct_response":0
     }
 ]
