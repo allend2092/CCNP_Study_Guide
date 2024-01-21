@@ -41,12 +41,15 @@
 </head>
 <body>
     <div id="flashcard">
-        <div id="question" style="display: block;">
-    		{{ card.question }}
-	</div>
-        <div id="answer" style="display: none;">
-            {{ card.answer }}
-        </div>
+    <div id="question" style="display: block;">
+        {{ card.question }}
+        {% if card.image_path %}
+            <img src="{{ url_for('/home/pi/ccnp_app/static', filename=card.image_path) }}" alt="Flashcard Image">
+        {% endif %}
+    </div>
+    <div id="answer" style="display: none;">
+        {{ card.answer }}
+    </div>
         <button onclick="flipCard()">Flip Card</button>
         {% if card_index > 0 %}
             <button onclick="window.location.href='/?topic={{ topic }}&card={{ card_index - 1 }}'">Previous Card</button>
