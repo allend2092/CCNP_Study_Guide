@@ -1,18 +1,51 @@
 [
     {
-        "question": "What layer of the OSI model is responsible for routing?",
-        "answer": "The Network Layer (Layer 3) is responsible for routing.",
-        "image_path": "/static/images/osi_model.png",
-        "reference": "Cisco Networking Essentials, 2nd Edition",
-	"times_asked": 0,
-	"correct_response":0
+        "question": "Which command successfully configures a user-defined method list on a Cisco IOS device that uses the database on the device if the external server is not available for authentication?\na. aaa authentication login default local group radius\nb. aaa authentication login default group radius local\nc. aaa authentication login REMOTE_ACCESS local group radius\nd. aaa authentication login MANAGEMENT_ACCESS group radius local\n",
+        "answer": "d. aaa authentication login MANAGEMENT_ACCESS group radius local",
+        "image_path": "",
+        "reference": "pg 930 of cert guide",
+        "times_asked": 0,
+        "correct_response":0
     },
     {
-        "question": "What is the purpose of a VLAN?",
-        "answer": "A VLAN (Virtual Local Area Network) allows network administrators to group hosts under the same switch into separate networks.",
+        "question": "RADIUS - acronym and RFC?",
+        "answer": "RADIUS stands for Remote Authentication Dial-In User Service. Documented in RFC 2865",
         "image_path": "",
-        "reference": "CCNA 200-301 Official Cert Guide, Volume 1",
+        "reference": "https://rublon.com/blog/radius-vs-tacacs/#:~:text=TACACS%2B%20vs.,devices%20like%20routers%20and%20switches.",
         "times_asked": 0,
-	"correct_response":0
+        "correct_response":0
+    },
+	{
+        "question": "TACACS+ - acronym and RFC?",
+        "answer": "TACACS+ is an abbreviation of Terminal Access Controller Access-Control System Plus. - Described in RFC 1492",
+        "image_path": "",
+        "reference": "https://rublon.com/blog/radius-vs-tacacs/#:~:text=TACACS%2B%20vs.,devices%20like%20routers%20and%20switches.",
+        "times_asked": 0,
+        "correct_response":0
+    },
+	{
+        "question": "RADIUS port and protocol?",
+        "answer": "RADIUS uses UDP port 1812 or 1645 for authentication and port 1813 or 1646 for accounting.",
+        "image_path": "",
+        "reference": "https://rublon.com/blog/radius-vs-tacacs/#:~:text=TACACS%2B%20vs.,devices%20like%20routers%20and%20switches.",
+        "times_asked": 0,
+        "correct_response":0
+    },
+	{
+        "question": "TACACS+ port and protocol?",
+        "answer": "TACACS uses TCP port 49 to communicate between the client and server.",
+        "image_path": "",
+        "reference": "https://rublon.com/blog/radius-vs-tacacs/#:~:text=TACACS%2B%20vs.,devices%20like%20routers%20and%20switches.",
+        "times_asked": 0,
+        "correct_response":0
+    },
+	{
+        "question": "Regarding 'aaa authentication login' what is defined in the next sections of the command?",
+        "answer": "aaa authentication login {method-list-name} {method1} [method2] ... [methodN]",
+        "image_path": "",
+        "reference": "https://www.cisco.com/c/en/us/td/docs/routers/ncs6000/software/system_admin/command/reference/b_sysadmin_cr50xncs6008/b_sysadmin_cr50xncs6008_chapter_00.html",
+        "times_asked": 0,
+        "correct_response":0
     }
 ]
+
